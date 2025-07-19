@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inquire Now</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      color: #333;
+      background-image: url("images/blob-scene-haikei.svg");
+      background-repeat: repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #29AB87;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 30px;
+      color: white;
+    }
+
+    .logo {
+      width: 200px;
+      margin-right: 15px;
+    }
+
+    .company-name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 30px;
+    }
+
+    h1 {
+      color: #29AB87;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .left-side {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .right-side {
+      flex: 2;
+      min-width: 500px;
+    }
+
+    .contact-info {
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    form {
+      background-color: #ffffffcc;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+
+    form button {
+      margin-top: 20px;
+      background-color: #29AB87;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #29AB87;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <div class="company-name">Advance Connect Technologies Inc.</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Inquire Now!</h1>
+    <div class="row">
+      <div class="left-side">
+        <div class="contact-info">
+          <p><strong>Office Address</strong><br>
+          Unit 214/248 Cityland Dela Rosa Condominium,<br>
+          Dela Rosa St., Makati City<br><br>
+          +63 2 8696‑7198 / +63 2 8696‑7315 / +63 2 8722‑4572</p>
+        </div>
+        <iframe src="https://www.google.com/maps?q=Cityland+Dela+Rosa+Makati+City&output=embed"></iframe>
+      </div>
+
+      <div class="right-side">
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" required>
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" required>
+
+          <label for="contact">Contact No.</label>
+          <input type="text" id="contact" name="contact" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company">
+
+          <label for="inquiry">Inquiry</label>
+          <select id="inquiry" name="inquiry" required>
+            <option value="">-- Select an option --</option>
+            <option value="product">Product</option>
+            <option value="service">Service</option>
+            <option value="partnership">Partnership</option>
+            <option value="others">Others</option>
+          </select>
+
+          <label for="position">Job Position</label>
+          <input type="text" id="position" name="position">
+
+          <label for="message">Message (optional)</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+ 
+<footer>
+   
+  <div style="margin-top: 10px;">
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="products.html">Products</a> |
+      <a href="services.html">Services</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="footer-content">
+      &copy; 2025 Advance Connect Technologies Inc. All rights reserved.
+  <p style="margin-top: 2px;">Developed by Kristine Constantino</p>
+</footer>
+
+    </div>
+  </footer>
+</body>
+</html>

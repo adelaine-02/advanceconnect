@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services - Advance Connect Technologies Inc.</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      color: #333;
+      background-image: url("images/blob-scene-haikei.svg");
+      background-repeat: repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #29AB87;
+      padding: 30px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .logo-img {
+      width: 150px;
+      margin-right: 20px;
+    }
+
+    .logo span {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-left: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .products-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .products-section h2 {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .product-item {
+      margin: 40px auto;
+      max-width: 600px;
+    }
+
+    .product-item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-item a {
+      text-decoration: none;
+      color: #29AB87;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .nav-buttons {
+      text-align: center;
+      margin: 50px 0 30px;
+    }
+
+    .nav-buttons a {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #29AB87;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #29AB87;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .product-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .product-item {
+      width: 500px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product-item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .product-item:hover img {
+      transform: translateY(-6px);
+    }
+
+    .product-item a {
+      text-decoration: none;
+      color: #29AB87;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header style="padding: 20px 0;">
+    <div class="d-flex justify-content-between align-items-center" style="margin: 0 40px;">
+      <div class="d-flex align-items-center">
+        <img src="images/logo.png" alt="Logo" class="logo-img" style="width: 150px; margin-right: 20px;">
+        <span style="font-family: Verdana, sans-serif; font-size: 1.5rem; font-weight: bold; color:white;">
+          ADVANCE CONNECT TECHNOLOGIES INC.
+        </span>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link text-white">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link text-white">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link text-white">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="products-section">
+    <h2>Our Services</h2>
+    <p>We provide customized and end-to-end I.T Project Management for optimized I.T access and information processes for businesses.</p>
+
+    <div class="product-item">
+      <a href="services/data.html">
+        <img src="images/data.png" alt="Data Centers and Infrastructures" />
+        Data Centers and Infrastructures
+      </a>
+    </div>
+
+    <div class="product-item">
+      <a href="services/sc.html">
+        <img src="images/sc.jpg" alt="Structured Cabling" />
+        Structured Cabling
+      </a>
+    </div>
+
+    <div class="product-item">
+      <a href="services/migration.html">
+        <img src="images/migration.jpg" alt="Data Center Migration" />
+        Data Center Migration
+      </a>
+    </div>
+
+    <div class="product-item">
+      <a href="services/renovation.html">
+        <img src="images/renovation.jpg" alt="Data Center Renovation" />
+        Data Center Renovation
+      </a>
+    </div>
+  </section>
+
+ 
+  <footer>
+   
+  <div style="margin-top: 10px;">
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="products.html">Products</a> |
+      <a href="services.html">Services</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  <p style="margin-top: 10px;">&copy; 2025 Advance Connect Technologies Inc. All rights reserved.</p>
+  </div>
+  <p style="margin-top: 2px;">Developed by Kristine Constantino</p>
+</footer>
+</body>
+</html>
+
+  </footer>
+</body>
+</html>

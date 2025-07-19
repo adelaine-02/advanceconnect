@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advance Connect Technologies Inc.</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      color: #333;
+      background-image: url("images/blob-scene-haikei.svg");
+      background-repeat: repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #29AB87;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 30px;
+      color: white;
+    }
+
+    .logo {
+      width: 200px;
+      margin-right: 15px;
+    }
+
+    .company-name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      margin-bottom: 60px;
+      color: #29AB87;
+    }
+
+    .mission-vision-box {
+      background-color: #ffffffcc;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+
+    .carousel {
+      width: 1000px;
+      margin: 40px auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .slides {
+      display: flex;
+      width: calc(1000px * 5);
+      animation: slide 25s infinite;
+    }
+
+    .slides img {
+      width: 1000px;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0); }
+      20%  { transform: translateX(0); }
+      25%  { transform: translateX(-1000px); }
+      40%  { transform: translateX(-1000px); }
+      45%  { transform: translateX(-2000px); }
+      60%  { transform: translateX(-2000px); }
+      65%  { transform: translateX(-3000px); }
+      80%  { transform: translateX(-3000px); }
+      85%  { transform: translateX(-4000px); }
+      100% { transform: translateX(-4000px); }
+    }
+
+    .section {
+      padding: 40px 60px;
+    }
+
+    .see-products {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .see-products button {
+      background-color: #29AB87;
+      border: none;
+      padding: 10px 25px;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .divider {
+      height: 3px;
+      background-color: #29AB87;
+      margin: 50px auto;
+      width: 80%;
+    }
+
+    .partners-section {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .partners {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+      animation: floatPartners 3s ease-in-out infinite alternate;
+    }
+
+    .partners img {
+      max-width: 1000px;
+      transition: transform 0.7s;
+      animation: floatPartners 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatPartners {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+    }
+
+    footer {
+      background-color: #29AB87;
+      color: white;
+      text-align: center;
+      padding: 30px 30px;
+      margin-top: auto;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <div class="company-name">Advance Connect Technologies Inc.</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>About Us</h2>
+    <p>
+      We are a company of founders with over 20 years of experience in providing extensive Information Technology solutions to private enterprises and government sectors.<br><br>
+      We provide comprehensive technical solutions from hardware acquisition, network services, deployment, and installation to consulting services, and end-to-end IT project management.<br><br>
+      We harness the power of technology to continuously provide our clients the latest innovations, state of the art products, and software-related support.<br><br>
+      From experience, we have a deep understanding of how crucial our clients rely on technology to empower their business and aid in growth and advancement, thus, we partnered with only the most trustworthy and reliable brands in the industry.<br><br>
+      We are committed to always deliver unwavering quality of tech services to our clients as we aim to be regarded as one of the top tech companies in the Philippines.<br><br>
+      Today, we are slowly growing our clientele. We are focusing on building professional customer relationships in the years to come and establishing a brand that our clients and partners can trust.
+    </p>
+
+    <div class="mission-vision-box">
+      <h2>Mission and Vision</h2>
+      <h3>Mission</h3>
+      <p>To deliver state-of-the-art technology solutions and services with excellence and integrity, empowering businesses to thrive in the digital age.</p>
+      <h3>Vision</h3>
+      <p>To be the Philippines’ most trusted partner in IT innovation, driving growth and technological advancement for our clients.</p>
+    </div>
+  </section>
+
+  <div class="section">
+    <h2 style="text-align: center;">Our Products</h2>
+    <div class="carousel">
+      <div class="slides">
+        <div style="position: relative;">
+          <img src="images/cloud.jpg" alt="Cloud Solutions" />
+          <div class="caption">Cloud Solutions and Virtualization</div>
+        </div>
+        <div style="position: relative;">
+          <img src="images/computing.jpg" alt="Computing" />
+          <div class="caption">Computing</div>
+        </div>
+        <div style="position: relative;">
+          <img src="images/software.jpg" alt="Software" />
+          <div class="caption">Software</div>
+        </div>
+        <div style="position: relative;">
+          <img src="images/network.jpg" alt="Network" />
+          <div class="caption">Network Infrastructure</div>
+        </div>
+        <div style="position: relative;">
+          <img src="images/security.jpg" alt="Security" />
+          <div class="caption">Security Solutions</div>
+        </div>
+      </div>
+    </div>
+    <div class="see-products">
+      <button onclick="window.location.href='products.html'">See Our Products</button>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="partners-section">
+    <h2>Our Partners</h2>
+    <div class="partners">
+      <img src="images/partner1.png" alt="Partner 1" />
+      <img src="images/partner2.png" alt="Partner 2" />
+      <img src="images/partner3.png" alt="Partner 3" />
+      <img src="images/partner4.png" alt="Partner 4" />
+      <img src="images/partner5.png" alt="Partner 5" />
+      <img src="images/partner6.png" alt="Partner 6" />
+      <img src="images/partner7.png" alt="Partner 7" />
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      &copy; 2025 Advance Connect Technologies Inc. All rights reserved.
+ <p>Developed by Kristine Constantino</p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
